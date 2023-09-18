@@ -26,7 +26,12 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-        //
+        $user = User::find($request->user);
+        $roles = $request->roles;
+
+        $user->syncRoles($roles);
+        
+        return redirect()->route('roles.index');
     }
 
     public function show(User $user)
