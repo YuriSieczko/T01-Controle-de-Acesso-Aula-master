@@ -65,7 +65,7 @@ class RoleController extends Controller
         $role = Role::find($role->id);
         
         if(!isset($role)){
-            $msg = "Não há [ Role ], com identificador [ $role->id ], registrado no sistema!";
+            $msg = "Não há [ Role ], com identificador [ $role ], registrado no sistema!";
             $link = "roles.index";
             return view('roles.erroid', compact(['msg', 'link']));
         }
