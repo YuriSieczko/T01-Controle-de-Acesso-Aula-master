@@ -24,13 +24,11 @@
 
                             <td>
                                 <div style="display:flex">
-                                    @auth
-                                        <div style="margin-right:2%;">
-                                            <button type="button" class="btn btn-outline-info">
-                                                <a href="{{ route('users.show', $user) }}">Papeis do Usuário</a>
-                                            </button>
-                                        </div>
-                                    @endauth
+                                    <div style="margin-right:2%;">
+                                        <button type="button" class="btn btn-outline-info">
+                                            <a href="{{ route('users.show', $user) }}">Papeis do Usuário</a>
+                                        </button>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
